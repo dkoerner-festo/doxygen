@@ -14,7 +14,7 @@ jobs:
       matrix:
         config:
           - {
-              name: "Ubuntu Latest GCC Release (Intel)",
+              name: "Ubuntu 22.04 GCC Release (Intel)",
               os: ubuntu-22.04,
               build_type: "Release",
               cc: "gcc",
@@ -23,7 +23,7 @@ jobs:
               cmake_extra_opts: "-Dbuild_search=YES -Dbuild_app=YES -Dbuild_parse=YES",
             }
           - {
-              name: "Ubuntu Latest Clang Release (Intel)",
+              name: "Ubuntu 22.04 Clang Release (Intel)",
               os: ubuntu-22.04,
               build_type: "Release",
               cc: "clang",
